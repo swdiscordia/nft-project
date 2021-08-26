@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styled from "styled-components";
 
+//################## STYLED #########################
 const Hero = styled.div`
   height: 100vh;
   width: 100%;
@@ -10,11 +11,23 @@ const Hero = styled.div`
   flex-direction: column;
 `;
 
-const Heading = styled.h1`
-  color: #000;
-  font-size: 3rem;
-  font-weight: 900;
+const HeaderContent = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
+
+const Heading = styled.h1`
+  color: orange;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: 0%;
+`;
+
 export default function Inventory() {
   return (
     <>
@@ -23,7 +36,9 @@ export default function Inventory() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero>
-        <Heading>Inventory</Heading>
+        <HeaderContent>
+          <Heading>Inventory</Heading>
+        </HeaderContent>
       </Hero>
     </>
   );

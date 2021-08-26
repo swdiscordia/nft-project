@@ -4,10 +4,10 @@ import Link from "next/dist/client/link";
 import Image from "next/image";
 import Logo from "../public/logo.png";
 
+//################## STYLED #########################
 const Nav = styled.nav`
   height: 80px;
   background: #181818;
-
   color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -31,9 +31,9 @@ const Navbar = () => {
     <Nav>
       <ContainerLogo>
         <Image src={Logo} width={65} height={60} />
-        <StyledLink href="/" passHref>
-          NXT
-        </StyledLink>
+        <Link href="/" passHref>
+          <StyledLink>NXT</StyledLink>
+        </Link>
       </ContainerLogo>
       <div>
         <Link href="/" passHref>

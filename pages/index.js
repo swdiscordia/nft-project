@@ -7,9 +7,16 @@ const Hero = styled.div`
   height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+`;
 
+const HeaderContent = styled.div`
+  width: 100%;
+  height: auto;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Heading = styled.h1`
@@ -44,11 +51,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero>
-        <Heading>Starter Pack</Heading>
-        <TextStarter>Open the box and start to earn</TextStarter>
-        <SubText className="test">
-          Everything you need is here. Let's build your own squad!
-        </SubText>
+        <HeaderContent>
+          <Heading>Starter Pack</Heading>
+          <TextStarter>Open the box and start to earn</TextStarter>
+          <SubText className="test">
+            Everything you need is here. Let's build your own squad!
+          </SubText>
+        </HeaderContent>
       </Hero>
     </>
   );
