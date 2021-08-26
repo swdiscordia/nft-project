@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Link from "next/dist/client/link";
+import Image from "next/image";
+import Logo from "../public/logo.png";
 
 const Nav = styled.nav`
   height: 80px;
@@ -17,14 +19,22 @@ const StyledLink = styled.a`
   font-weight: 600;
 `;
 
+const ContainerLogo = styled.div`
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
 const Navbar = () => {
   return (
     <Nav>
-      <div>
+      <ContainerLogo>
+        <Image src={Logo} width={65} height={60} />
         <StyledLink href="/" passHref>
-          <a>NXT</a>
+          NXT
         </StyledLink>
-      </div>
+      </ContainerLogo>
       <div>
         <Link href="/" passHref>
           <StyledLink>Starter Pack</StyledLink>
