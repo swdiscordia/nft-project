@@ -54,7 +54,7 @@ export default function Home() {
         <HeaderContent>
           <Heading>Starter Pack</Heading>
           <TextStarter>Open the box and start to earn</TextStarter>
-          <SubText className="test">
+          <SubText>
             Everything you need is here. Let's build your own squad!
           </SubText>
         </HeaderContent>

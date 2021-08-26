@@ -7,18 +7,18 @@ const ButtonNav = () => {
       <Link href="/" passHref>
         <div className={styles.btn}>
           <a className={styles.test} href="#">
-            Read more
+            Starter Pack
           </a>
         </div>
       </Link>
-      <Link href="/" passHref>
+      <Link href="/inventory" passHref>
         <div className={styles.btn}>
-          <a href="#">Read more</a>
+          <a href="#">Inventory</a>
         </div>
       </Link>
-      <Link href="/" passHref>
+      <Link href="/fightmonster" passHref>
         <div className={styles.btn}>
-          <a href="#">Read more</a>
+          <a href="#">Fight Monster</a>
         </div>
       </Link>
     </div>
