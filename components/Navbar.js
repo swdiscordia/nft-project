@@ -3,11 +3,12 @@ import styled from "styled-components";
 import Link from "next/dist/client/link";
 import Image from "next/image";
 import Logo from "../public/logo.png";
+import ButtonNav from "./ButtonNav";
 
 //################## STYLED #########################
 const Nav = styled.nav`
   height: 80px;
-  background: #181818;
+  background: #350048;
   color: #fff;
   display: flex;
   justify-content: space-evenly;
@@ -36,15 +37,7 @@ const Navbar = () => {
         </Link>
       </ContainerLogo>
       <div>
-        <Link href="/" passHref>
-          <StyledLink>Starter Pack</StyledLink>
-        </Link>
-        <Link href="/inventory" passHref>
-          <StyledLink>Inventory</StyledLink>
-        </Link>
-        <Link href="/fightmonster" passHref>
-          <StyledLink>Fight monster</StyledLink>
-        </Link>
+        <ButtonNav />
       </div>
     </Nav>
   );
