@@ -21,6 +21,11 @@ const ButtonNav = () => {
           <a href="#">Fight Monster</a>
         </div>
       </Link>
+      <Link href="/fightmonster" passHref>
+        <div className={styles.btn}>
+          <a href="#">Connect Metamask</a>
+        </div>
+      </Link>
     </div>
   );
 };

@@ -8,11 +8,12 @@ import ButtonNav from "./ButtonNav";
 //################## STYLED #########################
 const Nav = styled.nav`
   height: 80px;
-  background: #350048;
+  background: #1e061d;
   color: #fff;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.4);
 `;
 
 const StyledLink = styled.a`
