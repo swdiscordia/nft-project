@@ -4,15 +4,17 @@ import Link from "next/dist/client/link";
 
 const Nav = styled.nav`
   height: 80px;
-  background: #000;
+  background: #181818;
+
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 `;
 
 const StyledLink = styled.a`
   padding: 0rem 2rem;
+  font-weight: 600;
 `;
 
 const Navbar = () => {

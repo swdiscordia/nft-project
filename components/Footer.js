@@ -4,7 +4,7 @@ import React from "react";
 const FooterSection = styled.div`
   background-color: #000;
   color: #fff;
-  height: 60ppx;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;

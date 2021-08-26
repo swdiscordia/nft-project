@@ -1,18 +1,41 @@
 import Head from "next/head";
 import styled from "styled-components";
 
+//################## STYLED #########################
+
 const Hero = styled.div`
-  height: 90vh;
+  height: 100vh;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  background-color: #fff;
+  align-items: center;
+
+  flex-direction: column;
 `;
 
 const Heading = styled.h1`
-  color: #000;
-  font-size: 10rem;
-  font-weight: 900;
+  color: orange;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-bottom: 0%;
 `;
+
+const TextStarter = styled.h4`
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 0.4rem;
+  font-weight: 600;
+`;
+
+const SubText = styled.p`
+  color: #fff;
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 500;
+`;
+
+//#################### Function page ##########################
+
 export default function Home() {
   return (
     <>
@@ -21,7 +44,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero>
-        <Heading>Shop</Heading>
+        <Heading>Starter Pack</Heading>
+        <TextStarter>Open the box and start to earn</TextStarter>
+        <SubText className="test">
+          Everything you need is here. Let's build your own squad!
+        </SubText>
       </Hero>
     </>
   );
