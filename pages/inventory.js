@@ -13,15 +13,15 @@ const Heading = styled.h1`
   font-size: 10rem;
   font-weight: 900;
 `;
-export default function Home() {
+export default function Inventory() {
   return (
     <>
       <Head>
-        <title>NFT | Shop</title>
+        <title>NFT | Inventory</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Hero>
-        <Heading>Shop</Heading>
+        <Heading>Inventory</Heading>
       </Hero>
     </>
   );
