@@ -1,5 +1,8 @@
 import Head from "next/head";
 import styled from "styled-components";
+import {SpacedRow} from "../components/Row";
+import Fighter from "../components/Fighter";
+import { useState } from 'react';
 
 //################## STYLED #########################
 
@@ -29,6 +32,48 @@ const Heading = styled.h1`
 `;
 
 export default function FightMonster() {
+  const [fighters, setFighters] = useState([
+    {
+      name: "Big Monster",
+      stats: {
+        winningChance: "70%",
+        health: 112
+      },
+      price: 0.0006
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        winningChance: "70%",
+        health: 112
+      },
+      price: 0.0006
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        winningChance: "70%",
+        health: 112
+      },
+      price: 0.0006
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        winningChance: "70%",
+        health: 112
+      },
+      price: 0.0006
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        winningChance: "70%",
+        health: 112
+      },
+      price: 0.0006
+    },
+  ])
   return (
     <>
       <Head>
@@ -39,9 +84,11 @@ export default function FightMonster() {
         <HeaderContent>
           <Heading>Fight Monster</Heading>
         </HeaderContent>
-      </Hero>
-      <Hero>
-        <Heading>Fight Monster</Heading>
+        <SpacedRow>
+          {fighters.map(fighter => 
+            <Fighter key={fighter.name} name={fighter.name} stats={fighter.stats} price={fighter.price} />
+          )}
+        </SpacedRow>
       </Hero>
     </>
   );

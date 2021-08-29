@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styled from "styled-components";
+import {Card} from "../components/Card";
 
 //################## STYLED #########################
 
@@ -49,17 +50,6 @@ const ContainerCard = styled.div`
   justify-content: center;
 `;
 
-const Cards = styled.div`
-  width: 300px;
-  height: 100%;
-  background-color: grey;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  border-radius: 30px;
-  border: solid 1px #fff;
-  box-shadow: rgba(255, 255, 255, 0.1);
-`;
-
 //#################### Function page ##########################
 
 export default function Home() {
@@ -78,9 +68,9 @@ export default function Home() {
           </SubText>
         </HeaderContent>
         <ContainerCard>
-          <Cards />
-          <Cards />
-          <Cards />
+          <Card />
+          <Card />
+          <Card />
         </ContainerCard>
       </Hero>
     </>
