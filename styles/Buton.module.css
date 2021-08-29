@@ -106,7 +106,7 @@
 }
 
 .container .btn:hover a {
-  letter-spacing: 3px;
+  letter-spacing: 2px;
 }
 
 .container .btn a::before {

@@ -32,9 +32,9 @@ const Navbar = () => {
   return (
     <Nav>
       <ContainerLogo>
-        <Image src={Logo} width={65} height={60} />
+        <Image src={Logo} alt="Site logo" width={65} height={60} />
         <Link href="/" passHref>
-          <StyledLink>NXT</StyledLink>
+          <StyledLink>CryptoMonsters</StyledLink>
         </Link>
       </ContainerLogo>
       <div>
