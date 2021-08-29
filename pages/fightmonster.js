@@ -33,47 +33,63 @@ const Heading = styled.h1`
 
 export default function FightMonster() {
   const [fighters, setFighters] = useState([
-    {
-      name: "Big Monster",
-      stats: {
-        winningChance: "70%",
-        health: 112
+      {
+        name: "Big Monster",
+        stats: {
+          level: 1,
+          winningChance: "70%",
+          health: 112,
+          minWin: 2,
+          maxWin: 6
+        },
+        price: 0.0006
       },
-      price: 0.0006
-    },
-    {
-      name: "Big Monster",
-      stats: {
-        winningChance: "70%",
-        health: 112
+      {
+        name: "Big Monster",
+        stats: {
+          level: 1,
+          winningChance: "70%",
+          health: 112,
+          minWin: 2,
+          maxWin: 6
+        },
+        price: 0.0006
       },
-      price: 0.0006
-    },
-    {
-      name: "Big Monster",
-      stats: {
-        winningChance: "70%",
-        health: 112
+      {
+        name: "Big Monster",
+        stats: {
+          level: 1,
+          winningChance: "70%",
+          health: 112,
+          minWin: 2,
+          maxWin: 6
+        },
+        price: 0.0006
       },
-      price: 0.0006
-    },
-    {
-      name: "Big Monster",
-      stats: {
-        winningChance: "70%",
-        health: 112
+      {
+        name: "Big Monster",
+        stats: {
+          level: 1,
+          winningChance: "70%",
+          health: 112,
+          minWin: 2,
+          maxWin: 6
+        },
+        price: 0.0006
       },
-      price: 0.0006
-    },
-    {
-      name: "Big Monster",
-      stats: {
-        winningChance: "70%",
-        health: 112
+      {
+        name: "Big Monster",
+        stats: {
+          level: 1,
+          winningChance: "70%",
+          health: 112,
+          minWin: 2,
+          maxWin: 6
+        },
+        price: 0.0006
       },
-      price: 0.0006
-    },
-  ])
+    ])
+
   return (
     <>
       <Head>
