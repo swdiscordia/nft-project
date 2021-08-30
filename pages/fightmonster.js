@@ -1,8 +1,8 @@
 import Head from "next/head";
 import styled from "styled-components";
-import {SpacedRow} from "../components/Row";
+import { SpacedRow } from "../components/Row";
 import Fighter from "../components/Fighter";
-import { useState } from 'react';
+import { useState } from "react";
 
 //################## STYLED #########################
 
@@ -28,67 +28,69 @@ const Heading = styled.h1`
   font-size: 4rem;
   font-weight: 600;
   margin-top: 5rem;
-  margin-bottom: 0%;
+  @media screen and (max-width: 1152px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 export default function FightMonster() {
   const [fighters, setFighters] = useState([
-      {
-        name: "Big Monster",
-        stats: {
-          level: 1,
-          winningChance: "70%",
-          health: 112,
-          minWin: 2,
-          maxWin: 6
-        },
-        price: 0.0006
+    {
+      name: "Big Monster",
+      stats: {
+        level: 1,
+        winningChance: "70%",
+        health: 112,
+        minWin: 2,
+        maxWin: 6,
       },
-      {
-        name: "Big Monster",
-        stats: {
-          level: 1,
-          winningChance: "70%",
-          health: 112,
-          minWin: 2,
-          maxWin: 6
-        },
-        price: 0.0006
+      price: 0.0006,
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        level: 1,
+        winningChance: "70%",
+        health: 112,
+        minWin: 2,
+        maxWin: 6,
       },
-      {
-        name: "Big Monster",
-        stats: {
-          level: 1,
-          winningChance: "70%",
-          health: 112,
-          minWin: 2,
-          maxWin: 6
-        },
-        price: 0.0006
+      price: 0.0006,
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        level: 1,
+        winningChance: "70%",
+        health: 112,
+        minWin: 2,
+        maxWin: 6,
       },
-      {
-        name: "Big Monster",
-        stats: {
-          level: 1,
-          winningChance: "70%",
-          health: 112,
-          minWin: 2,
-          maxWin: 6
-        },
-        price: 0.0006
+      price: 0.0006,
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        level: 1,
+        winningChance: "70%",
+        health: 112,
+        minWin: 2,
+        maxWin: 6,
       },
-      {
-        name: "Big Monster",
-        stats: {
-          level: 1,
-          winningChance: "70%",
-          health: 112,
-          minWin: 2,
-          maxWin: 6
-        },
-        price: 0.0006
+      price: 0.0006,
+    },
+    {
+      name: "Big Monster",
+      stats: {
+        level: 1,
+        winningChance: "70%",
+        health: 112,
+        minWin: 2,
+        maxWin: 6,
       },
-    ])
+      price: 0.0006,
+    },
+  ]);
 
   return (
     <>
@@ -101,9 +103,14 @@ export default function FightMonster() {
           <Heading>Fight Monster</Heading>
         </HeaderContent>
         <SpacedRow>
-          {fighters.map(fighter => 
-            <Fighter key={fighter.name} name={fighter.name} stats={fighter.stats} price={fighter.price} />
-          )}
+          {fighters.map((fighter) => (
+            <Fighter
+              key={fighter.name}
+              name={fighter.name}
+              stats={fighter.stats}
+              price={fighter.price}
+            />
+          ))}
         </SpacedRow>
       </Hero>
     </>

@@ -9,6 +9,7 @@ const FooterSection = styled.div`
   justify-content: center;
   align-items: center;
   box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1);
+  margin-top: 1rem;
 `;
 
 function Footer() {

@@ -1,11 +1,9 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  max-width: 300px;
-  width: 100%;
-  min-height: 150px;
+  min-width: 300px;
+  height: 370px;
   background-color: grey;
-  margin-left: 1rem;
   margin-right: 1rem;
   border-radius: 30px;
   border: solid 1px #fff;
@@ -13,6 +11,12 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-padding: 1rem;
-`;
+  padding: 1rem;
 
+  @media screen and (max-width: 955px) {
+    margin-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    /* to change media query completly on this go Index */
+  }
+`;

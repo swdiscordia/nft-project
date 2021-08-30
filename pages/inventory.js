@@ -25,7 +25,9 @@ const Heading = styled.h1`
   font-size: 4rem;
   font-weight: 600;
   margin-top: 5rem;
-  margin-bottom: 0%;
+  @media screen and (max-width: 1152px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 export default function Inventory() {

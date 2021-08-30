@@ -195,3 +195,20 @@
   background: orange;
   box-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 60px orange;
 }
+
+/* ---------------------------------------  */
+/*-------------- Media Query ---------------*/
+/* ---------------------------------------  */
+
+@media screen and (max-width: 1152px) {
+  .container {
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  .container .btn0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

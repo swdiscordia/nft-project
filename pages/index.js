@@ -1,11 +1,10 @@
 import Head from "next/head";
 import styled from "styled-components";
-import {Card} from "../components/Card";
+import { Card } from "../components/Card";
 
 //################## STYLED #########################
 
 const Hero = styled.div`
-  height: 100vh;
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -26,6 +25,9 @@ const Heading = styled.h1`
   font-size: 4rem;
   font-weight: 600;
   margin-top: 5rem;
+  @media screen and (max-width: 1152px) {
+    margin-top: 1.5rem;
+  }
 `;
 
 const TextStarter = styled.h4`
@@ -44,10 +46,17 @@ const SubText = styled.p`
 
 const ContainerCard = styled.div`
   width: 100%;
-  height: 400px;
+  height: 450px;
   margin-top: 8rem;
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 955px) {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    /* to change media query completly on this go Index */
+  }
 `;
 
 //#################### Function page ##########################

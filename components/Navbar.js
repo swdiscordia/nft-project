@@ -26,6 +26,10 @@ const ContainerLogo = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 995px) {
+    display: flex;
+    flex-direction: flex-end;
+  }
 `;
 
 const Navbar = () => {
