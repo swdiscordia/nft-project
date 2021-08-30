@@ -7,6 +7,7 @@ import ButtonNav from "./ButtonNav";
 
 //################## STYLED #########################
 const Nav = styled.nav`
+  width: 100%;
   height: 80px;
   background: #1e061d;
   color: #fff;
@@ -16,34 +17,10 @@ const Nav = styled.nav`
   box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.4);
 `;
 
-const StyledLink = styled.a`
-  padding: 0rem 2rem;
-  font-weight: 600;
-`;
-
-const ContainerLogo = styled.div`
-  width: 300px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  @media (max-width: 995px) {
-    display: flex;
-    flex-direction: flex-end;
-  }
-`;
-
 const Navbar = () => {
   return (
     <Nav>
-      <ContainerLogo>
-        <Image src={Logo} alt="Site logo" width={65} height={60} />
-        <Link href="/" passHref>
-          <StyledLink>CryptoMonsters</StyledLink>
-        </Link>
-      </ContainerLogo>
-      <div>
-        <ButtonNav />
-      </div>
+      <ButtonNav />
     </Nav>
   );
 };

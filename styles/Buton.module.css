@@ -1,86 +1,10 @@
-.container {
-  width: 900px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.container .btn0 {
-  display: flex;
-  align-items: center;
-  width: 155px;
-  height: 50px;
-  margin: 20px;
-  font-weight: 600;
-  justify-content: center;
-}
-
-.container .btn0 a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.container .btn0:hover {
-  transform: scale(1.1);
-}
-
-.btn0 a::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0.2em;
-  background-color: rgb(134, 70, 27);
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
-}
-
-.btn0 a:hover::after,
-.btn0 a:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
-}
-
-.btn0:nth-child(2) a {
-  overflow: hidden;
-}
-
-.btn0:nth-child(2) a::after {
-  opacity: 1;
-  transform: translate3d(-100%, 0, 0);
-}
-
-.btn0:nth-child(2) a:hover::after,
-.btn0:nth-child(2) a:focus::after {
-  transform: translate3d(0, 0, 0);
-}
-
-.btn0:nth-child(3) a::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
-}
-
-.btn0:nth-child(3) a:hover::after,
-.btn0:nth-child(3) a:focus::after {
-  transform: scale(1);
-}
-
 .container .btn {
   position: relative;
-  width: 155px;
+  width: 175px;
   height: 50px;
   margin: 20px;
 }
 
-.container .btn:nth-child(4) {
-  position: relative;
-  width: 190px;
-  height: 50px;
-}
 .container .btn a {
   position: absolute;
   top: 0;
@@ -171,27 +95,6 @@
 
 .container .btn:nth-child(1)::before,
 .container .btn:nth-child(1)::after {
-  background: #2bd2ff;
-  box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
-    0 0 60px #2bd2ff;
-}
-
-.container .btn:nth-child(2)::before,
-.container .btn:nth-child(2)::after {
-  background: #2bd2ff;
-  box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
-    0 0 60px #2bd2ff;
-}
-
-.container .btn:nth-child(3)::before,
-.container .btn:nth-child(3)::after {
-  background: #2bd2ff;
-  box-shadow: 0 0 5px #2bd2ff, 0 0 15px #2bd2ff, 0 0 30px #2bd2ff,
-    0 0 60px #2bd2ff;
-}
-
-.container .btn:nth-child(4)::before,
-.container .btn:nth-child(4)::after {
   background: orange;
   box-shadow: 0 0 5px orange, 0 0 15px orange, 0 0 60px orange;
 }
@@ -199,16 +102,3 @@
 /* ---------------------------------------  */
 /*-------------- Media Query ---------------*/
 /* ---------------------------------------  */
-
-@media screen and (max-width: 1152px) {
-  .container {
-    width: 700px;
-    display: flex;
-    justify-content: flex-end;
-    margin: 0;
-  }
-  .container .btn0 {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
